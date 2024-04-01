@@ -1,13 +1,21 @@
-  import React from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
   function Navbar() {
+
+    const navigate = useNavigate();
+
+    const handleNavigate = (path) => {
+      navigate(path);
+    };
+
     return (
       <div className='navbar-main'>
         <nav>
               <ul className="navbar-items">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Finances</a></li>
-                  <li><a href="#">Sleep</a></li>
+                  <li onClick={()=>handleNavigate('/')}>Home</li>
+                  <li onClick={()=>handleNavigate('/finance')}>Finances</li>
+                  <li onClick={()=>handleNavigate('/sleep')}>Sleep</li>
               </ul>
           </nav>
       </div>
