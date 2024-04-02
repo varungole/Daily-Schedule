@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom'
                   <li onClick={()=>handleNavigate('/')}>Home</li>
                   <li onClick={()=>handleNavigate('/finance')}>Finances</li>
                   <li onClick={()=>handleNavigate('/sleep')}>Sleep</li>
+                  <li className='login' onClick={() => handleNavigate('/')}>Login</li>
               </ul>
           </nav>
       </div>

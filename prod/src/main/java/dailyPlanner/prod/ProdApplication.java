@@ -1,13 +1,13 @@
-package mydaytoday.daytoday;
+package dailyPlanner.prod;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DayToDayApplication {
+public class ProdApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DayToDayApplication.class, args);
+		SpringApplication.run(ProdApplication.class, args);
 	}
 
 }

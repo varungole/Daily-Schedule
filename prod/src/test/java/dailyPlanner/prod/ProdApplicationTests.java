@@ -1,10 +1,10 @@
-package mydaytoday.daytoday;
+package dailyPlanner.prod;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DayToDayApplicationTests {
+class ProdApplicationTests {
 
 	@Test
 	void contextLoads() {
