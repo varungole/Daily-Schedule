@@ -1,26 +1,46 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-  function Navbar() {
+function Navbar() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const handleNavigate = (path) => {
-      navigate(path);
-    };
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
 
-    return (
-      <div className='navbar-main'>
-        <nav>
-              <ul className="navbar-items">
-                  <li onClick={()=>handleNavigate('/')}>Home</li>
-                  <li onClick={()=>handleNavigate('/finance')}>Finances</li>
-                  <li onClick={()=>handleNavigate('/sleep')}>Sleep</li>
-                  <li className='login' onClick={() => handleNavigate('/login')}>Login</li>
-              </ul>
-          </nav>
+  return (
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" onClick={() => navigate('/home')}>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick={() => navigate('/finance')}>Finance</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" onClick={() => navigate('/sleep')}>Sleep</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" onClick={() => navigate('/todo')}>To-Dos</a>
+          </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-    )
-  }
+    </div>
+  </nav>
+  )
+}
 
-  export default Navbar
+export default Navbar
