@@ -30,7 +30,7 @@ function Home() {
           <label>Name of Problem</label>
           <input type='text'></input>
 
-          <label>Difficultt</label>
+          <label>Difficulty</label>
           <input type='text'></input>
 
           <label>Name of Problem</label>
