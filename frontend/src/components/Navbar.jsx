@@ -10,32 +10,32 @@ function Navbar() {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="container-fluid">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" onClick={() => navigate('/home')}>Home</a>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" onClick={() => navigate('/')}>Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" onClick={() => navigate('/finance')}>Finance</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" onClick={() => navigate('/sleep')}>Sleep</a>
+          <li className="nav-item">
+            <a className="nav-link" onClick={() => navigate('/finance')}>Finance</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" onClick={() => navigate('/todo')}>To-Dos</a>
+          <li clasNames="nav-item">
+            <a className="nav-link" onClick={() => navigate('/sleep')}>Sleep</a>
+          </li>
+
+          <li className="nav-item">
+            <a className="nav-link" onClick={() => navigate('/todo')}>To-Dos</a>
           </li>
         
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form className="d-flex" role="search">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
