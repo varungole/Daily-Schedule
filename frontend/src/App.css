@@ -76,3 +76,11 @@ section {
 .AI-Bot {
   margin-top: 1rem;
 }
+
+.navbar navbar-expand-lg bg-body-tertiary {
+  cursor: pointer;
+}
+
+.form-control {
+  cursor: pointer;
+}
