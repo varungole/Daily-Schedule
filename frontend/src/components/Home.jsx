@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <div className='Home'>
-      <div className='grid-flex'>
+      <div className='grid-flex'> 
         <section className='reminders'>  {/* Use semantic element 'section' for reminders */}
           <h3>Reminders</h3>
           <ul className="list-group">
@@ -24,7 +24,7 @@ function Home() {
             <li className="list-group-item">And a fifth one</li>
           </ul>
         </section>
-        <div>
+        <div className='form-to-use'>
         <h5 className='form-use'>Use this form to fill in an train the model to help your leetcode journey</h5>
         <form className='form'>
           <label>Name of Problem</label>
